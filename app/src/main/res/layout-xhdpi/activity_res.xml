@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    tools:context=".ResActivity">
+
+    <!--Result TextView-->
+
+    <TextView
+        android:id="@+id/blaba"
+        android:layout_width="242dp"
+        android:layout_height="118dp"
+        android:fontFamily="@font/fredoka_semibold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="?colorOnPrimary"
+        android:textSize="84sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00.00" />
+
+    <!--Menu&Save Button-->
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/button2"
+        android:layout_width="290dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="?colorOnPrimary"
+        android:elevation="8dp"
+        android:fontFamily="@font/fredoka_bold"
+        android:gravity="center"
+        android:text="@string/menu"
+        android:textAlignment="center"
+        android:layout_marginBottom="60dp"
+        android:textColor="?colorPrimary"
+        android:textSize="18sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blaba" />
+
+    <!--Back Button-->
+
+    <ImageButton
+        android:id="@+id/prevbut"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?colorOnPrimary"
+        android:background="@drawable/roundcorner"
+        android:elevation="8dp"
+        android:src="@drawable/ic_previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.noti">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Noti"
+        tools:targetApi="31">
+        <activity
+            android:name=".SeconActivityCal3_in"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal4_le"
+            android:exported="false" />
+        <activity
+            android:name=".CreditsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal4_te"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal3_te"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal3_sc"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal3_ec"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal3_le"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal2_le"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal2_in"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal2_ec"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal4_in"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal4_ma"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal4_sc"
+            android:exported="false" />
+        <!--
+        <activity
+            android:name=".ActivityActivityCal4_sc"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".SeconActivityCal4_ec"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal3_ma"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal2_sc"
+            android:exported="false" />
+        <activity
+            android:name=".PrepActivityCal9"
+            android:exported="false" />
+        <activity
+            android:name=".PrepActivityCal8"
+            android:exported="false" />
+        <activity
+            android:name=".PrepActivityCal7"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCp"
+            android:exported="false" />
+        <activity
+            android:name=".ResActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal4"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal3"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivityCal2"
+            android:exported="false" />
+        <activity
+            android:name=".SeconActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

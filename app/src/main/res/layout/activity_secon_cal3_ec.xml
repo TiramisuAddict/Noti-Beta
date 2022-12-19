@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    tools:context=".SeconActivityCal3_ec">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fredoka_bold"
+                android:gravity="center"
+                android:text="3 eme Eco"
+                android:textAlignment="center"
+                android:textColor="?colorOnPrimary"
+                android:textSize="54sp" />
+
+            <!--Card 1 (Ar)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/arabe"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n1_orale"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Orale"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n1orale"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n1_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n1c1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n1_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n1s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n1_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 2 (Fr)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/fran_ais"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n2_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Orale"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n2c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n2_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n2c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n2_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n2s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n2_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 3 (Eng)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/anglais"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n3_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Orale"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n3c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n3_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n3c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n3_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n3s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n3_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 4 (History)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/histoire"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n4_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Orale"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n4c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n4_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n4c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n4_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n4s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n4_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 5 (Geo)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/g_ographie"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n5_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Orale"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n5c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n5_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n5c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n5_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n5s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n5_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 6 (Philosophy)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="?colorPrimary"
+                        android:gravity="center"
+                        android:text="@string/philosophie"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n6_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n6c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n6_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 7 (Maths)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/math"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n7_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n7c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n7_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n7s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n7_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 8 (Gestion)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/gestion"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n8_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n8c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n8_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n8s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n8_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 9 (Economy)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/conomie"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n9_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n9c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n9_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/project"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n9c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n9_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n9s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n9_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 10 (Informatic)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/informatique"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n10_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n10c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n10_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n10s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n10_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card 11 (Option)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/option"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n11_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Orale"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n11c1"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n11_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n11c2"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n11_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n11s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n11_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--Card 12 (Sports)-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="241dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/fredoka_semibold"
+                            android:gravity="center"
+                            android:text="@string/sport"
+                            android:textAlignment="center"
+                            android:textColor="?colorPrimary"
+                            android:textSize="24sp" />
+
+                        <CheckBox
+                            android:id="@+id/SportCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n12_ctr1"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n12c1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n12_synt"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/synthese"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n12s"
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/n12_res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fredoka_semibold"
+                        android:gravity="center"
+                        android:text="@string/_00_00"
+                        android:textColor="?colorPrimary"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Lena Bekeyet el cards-->
+
+            <Button
+                android:id="@+id/button"
+                android:layout_gravity="center"
+                android:text="@string/ehseb"
+                android:layout_width="320dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:layout_height="63dp"
+                android:gravity="center"
+                android:elevation="8dp"
+                android:textColor="?colorPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/fredoka_bold"
+                android:textAlignment="center"
+                app:cornerRadius="80dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

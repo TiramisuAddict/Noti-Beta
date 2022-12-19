@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    tools:context=".SeconActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_loader"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--TextView-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18.5dp"
+            android:fontFamily="@font/fredoka_bold"
+            android:text="@string/select_your_level"
+            android:textColor="?colorOnPrimary"
+            android:textSize="32sp"
+            android:textAlignment="center" />
+
+        <!--1 ere Button-->
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="?colorOnPrimary"
+            android:id="@+id/b1ere"
+            android:layout_width="250dp"
+            android:layout_height="63dp"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:fontFamily="@font/fredoka_bold"
+            android:text="1 ere"
+            android:textColor="?colorPrimary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            app:cornerRadius="80dp" />
+
+        <!--2 eme Button-->
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="?colorOnPrimary"
+            android:id="@+id/b2eme"
+            android:layout_width="250dp"
+            android:layout_height="63dp"
+            android:fontFamily="@font/fredoka_bold"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:text="2 eme"
+            android:textColor="?colorPrimary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            app:cornerRadius="80dp" />
+
+        <!--3 eme Button-->
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="?colorOnPrimary"
+            android:id="@+id/b3eme"
+            android:layout_width="250dp"
+            android:layout_height="63dp"
+            android:fontFamily="@font/fredoka_bold"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:text="3 eme"
+            android:textColor="?colorPrimary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            app:cornerRadius="80dp" />
+
+        <!--4 eme Button-->
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="?colorOnPrimary"
+            android:id="@+id/b4eme"
+            android:layout_width="250dp"
+            android:layout_height="63dp"
+            android:fontFamily="@font/fredoka_bold"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:text="4 eme"
+            android:textColor="?colorPrimary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            app:cornerRadius="80dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

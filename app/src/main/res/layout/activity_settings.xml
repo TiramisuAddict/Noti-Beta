@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/SettingsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_semibold"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textColor="?colorOnPrimary"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="164dp"
+        android:backgroundTint="?colorOnPrimary"
+        android:elevation="8dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/applyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/fredoka_bold"
+                android:gravity="start"
+                android:text="Mode nuit :"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="34sp" />
+
+            <Switch
+                android:id="@+id/DmSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:scaleX="1.25"
+                android:scaleY="1.25"
+                android:thumbTint="#F9F9F9"
+                android:track="@drawable/bg_track"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/applyButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="320dp"
+        android:layout_height="63dp"
+        android:backgroundTint="?colorOnPrimary"
+        android:elevation="8dp"
+        android:fontFamily="@font/fredoka_bold"
+        android:gravity="center"
+        android:text="Apply"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?colorPrimary"
+        android:textSize="18sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveB"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="?colorOnPrimary"
+        android:elevation="8dp"
+        android:fontFamily="@font/fredoka_bold"
+        android:gravity="center"
+        android:text="@string/menu"
+        android:textAlignment="center"
+        android:textColor="?colorPrimary"
+        android:textSize="18sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

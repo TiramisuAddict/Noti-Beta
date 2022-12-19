@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Noti</string>
+
+    <string name="noti">Noti</string>
+
+    <string name="_00_00">0.00</string>
+
+    <string name="noti_b">noti !</string>
+
+    <string name="Orale">Orale</string>
+
+    <string name="Controle1">Controle</string>
+
+    <string name="synthese">synthèse</string>
+
+    <string name="contro1">Controle 1</string>
+
+    <string name="contro2">Controle 2</string>
+
+    <string name="tpp">Tp</string>
+
+    <string name="tprg">Tp / Project</string>
+
+    <string name="menu">Menu</string>
+
+    <string name="ehseb">Ehseb</string>
+
+    <string name="controle_essay">Controle (Production)</string>
+
+    <string name="synthetic_essay">Synthetic (Production)</string>
+
+    <string name="Preparatoire">Preparatoire</string>
+
+    <string name="Secondaire">Secondaire</string>
+
+    <string name="select_your_level">Choisissez votre niveau :</string>
+    <string name="select_your_orientation">choisissez votre orientation :</string>
+
+    <string name="exempt_">dispense</string>
+    <string name="ResetCounter">0.00</string>
+    <string name="option">Option</string>
+    <string name="settings">paramètres</string>
+    <string name="project">projet</string>
+    <string name="arabe">Arabe</string>
+    <string name="fran_ais">Français</string>
+    <string name="anglais">Anglais</string>
+    <string name="histoire">Histoire</string>
+    <string name="g_ographie">Géographie</string>
+    <string name="pens_e_islamique">Pensée islamique</string>
+    <string name="ducation_civique">Éducation civique</string>
+    <string name="math">Math</string>
+    <string name="physique">Physique</string>
+    <string name="sciences_v_t">Sciences V . T</string>
+    <string name="technique">Technique</string>
+    <string name="informatique">Informatique</string>
+    <string name="sport">Sport</string>
+    <string name="e_musique">e.musique</string>
+    <string name="arts_plastiques">Arts plastiques</string>
+    <string name="form_test">Form Test</string>
+    <string name="ducation_th_trale">éducation théâtrale</string>
+    <string name="conomie">Économie</string>
+    <string name="gestion">Gestion</string>
+    <string name="philosophie">philosophie</string>
+    <string name="sti">S . T . I</string>
+    <string name="prog">Programmation</string>
+    <string name="m_canique">Mécanique</string>
+    <string name="lectrique">Électrique</string>
+    <string name="orale_controle">Orale / Controle</string>
+
+</resources>

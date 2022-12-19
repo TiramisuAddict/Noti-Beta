@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!--Logo-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="167dp"
+            android:layout_height="168dp"
+            android:layout_marginBottom="21dp"
+            app:srcCompat="@drawable/menulogo"
+            tools:ignore="ContentDescription" />
+
+
+        <!--Result Card-->
+
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="280dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="?attr/colorOnPrimary"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fredoka_semibold"
+                android:gravity="center"
+                android:text="@string/_00_00"
+                android:textAlignment="center"
+                android:textColor="?colorPrimary"
+                android:textSize="60sp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Prepa Button-->
+
+        <Button
+            android:id="@+id/prepaNB"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:fontFamily="@font/fredoka_bold"
+            android:gravity="center"
+            android:text="Collège"
+            android:textAlignment="center"
+            android:textColor="?colorPrimary"
+            android:textSize="16sp"
+            app:cornerRadius="80dp" />
+
+        <!--Secon Button-->
+
+        <Button
+            android:id="@+id/seconB"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:fontFamily="@font/fredoka_bold"
+            android:gravity="center"
+            android:text="Lycée"
+            android:textAlignment="center"
+            android:textColor="?colorPrimary"
+            android:textSize="16sp"
+            app:cornerRadius="80dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Credits Button-->
+
+            <ImageButton
+                android:id="@+id/creditsButton"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/fredoka_bold"
+                android:src="@drawable/ic_about__community_"
+                app:cornerRadius="80dp" />
+
+
+            <!--Settings Button-->
+
+            <Button
+                android:id="@+id/settinButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:drawableLeft="@drawable/ic_settings"
+                android:fontFamily="@font/fredoka_bold"
+                android:text="@string/settings"
+                android:textColor="?colorPrimary"
+                android:textSize="15sp"
+                app:cornerRadius="80dp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
