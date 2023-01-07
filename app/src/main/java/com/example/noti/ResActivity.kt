@@ -33,7 +33,7 @@ class ResActivity : AppCompatActivity() {
         //adb
         val adb = findViewById<Button>(R.id.adb)
         adb.setOnClickListener() {
-            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://lyceena.tn/"))
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/lyceena-noti"))
             startActivity(i)
         }
 
