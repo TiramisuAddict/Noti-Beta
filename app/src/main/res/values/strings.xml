@@ -27,7 +27,7 @@
 
     <string name="controle_essay">Controle (Production)</string>
 
-    <string name="synthetic_essay">Synthetic (Production)</string>
+    <string name="synthetic_essay">Synthèse (Production)</string>
 
     <string name="Preparatoire">Preparatoire</string>
 
@@ -63,8 +63,11 @@
     <string name="philosophie">philosophie</string>
     <string name="sti">S . T . I</string>
     <string name="prog">Programmation</string>
-    <string name="m_canique">Mécanique</string>
+    <string name="m_canique"><font fgcolour="#CD7">Mécanique</font></string>
     <string name="lectrique">Électrique</string>
     <string name="orale_controle">Orale / Controle</string>
+    <string name="etude_de_texte">Etude de texte</string>
+    <string name="lad">أقرى عند <font fgcolor="#CD4236">أحسن</font> الأساتذة\nفي تونس في منصة <font fgcolor="#CD4236">ليسينا</font></string>
+
 
 </resources>

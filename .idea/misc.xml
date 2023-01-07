@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable-night/bg_track.xml" value="0.1545" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable-night/ic_layer_2.xml" value="0.148" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable-notnight/ic_layer_2.xml" value="0.148" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/bg_track.xml" value="0.187" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_about__community_.xml" value="0.1735" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_back.xml" value="0.1645" />
@@ -15,6 +17,8 @@
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_home.xml" value="0.165" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_launcher_background.xml" value="0.169" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1615" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_layer_2.xml" value="0.148" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_logo_only_01.xml" value="0.148" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_mainbg.xml" value="0.167" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_previous.xml" value="0.151" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/drawable/ic_settings.xml" value="0.1735" />
@@ -34,23 +38,24 @@
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/font/ftestt.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/font/h.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/font/lobster_regular.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/font/tajawal_bold.xml" value="0.245662100456621" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_main.xml" value="0.46875" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_prep.xml" value="0.42916666666666664" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_res.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_res.xml" value="0.5208333333333334" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_secon.xml" value="0.42916666666666664" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_secon_cal2.xml" value="0.42916666666666664" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_secon_cal3.xml" value="0.42916666666666664" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-hdpi/activity_secon_cal4.xml" value="0.42916666666666664" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_main.xml" value="0.375" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_prep.xml" value="0.2682291666666667" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_res.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_res.xml" value="0.3255208333333333" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_secon.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_secon_cal2.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_secon_cal3.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xhdpi/activity_secon_cal4.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_main.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_prep.xml" value="0.20462962962962963" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_res.xml" value="0.20427350427350427" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_res.xml" value="0.2191780821917808" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_secon.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_secon_cal2.xml" value="0.20427350427350427" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout-xxhdpi/activity_secon_cal3.xml" value="0.20512820512820512" />
@@ -58,10 +63,10 @@
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_credits.xml" value="0.21574074074074073" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_main.xml" value="0.703125" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep.xml" value="0.64375" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep_cal7.xml" value="0.6" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep_cal8.xml" value="0.19074074074074074" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep_cal9.xml" value="0.19074074074074074" />
-        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_res.xml" value="0.19074074074074074" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep_cal7.xml" value="0.21574074074074073" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep_cal8.xml" value="0.21574074074074073" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_prep_cal9.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_res.xml" value="0.152" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_secon.xml" value="0.19074074074074074" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_secon_cal2.xml" value="0.19074074074074074" />
         <entry key="..\:/Users/Ena/AndroidStudioProjects/Noti/app/src/main/res/layout/activity_secon_cal2_ec.xml" value="0.1935185185185185" />

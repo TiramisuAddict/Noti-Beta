@@ -84,7 +84,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/fredoka_bold"
             android:gravity="center"
-            android:text="Israa Souideny"
+            android:text="Israa Soudeny"
             android:textAlignment="center"
             android:textColor="?colorOnPrimary"
             android:textSize="28sp"/>

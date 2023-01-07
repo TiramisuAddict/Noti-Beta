@@ -2,6 +2,7 @@ package com.example.noti
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -27,6 +28,13 @@ class ResActivity : AppCompatActivity() {
 
         prevbut.setOnClickListener() {
             onBackPressed()
+        }
+
+        //adb
+        val adb = findViewById<Button>(R.id.adb)
+        adb.setOnClickListener() {
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://lyceena.tn/"))
+            startActivity(i)
         }
 
 

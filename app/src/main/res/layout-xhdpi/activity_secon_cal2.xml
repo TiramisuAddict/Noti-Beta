@@ -68,7 +68,7 @@
             android:fontFamily="@font/fredoka_bold"
             android:gravity="center"
             android:elevation="8dp"
-            android:text="Lettre"
+            android:text="Lettres"
             android:textColor="?colorPrimary"
             android:textSize="16sp"
             android:textAlignment="center"

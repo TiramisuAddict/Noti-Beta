@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         loadData()
 
         if (haynoti.text.isNullOrEmpty()){
-            haynoti.text = "00.00"
+            haynoti.text = "0.00"
         }
 
     }

@@ -95,7 +95,7 @@
                 android:layout_height="63dp"
                 android:layout_marginEnd="5dp"
                 android:elevation="8dp"
-                android:text="Lettre"
+                android:text="Lettres"
                 android:fontFamily="@font/fredoka_bold"
                 android:textColor="?colorPrimary"
                 android:textSize="16sp"

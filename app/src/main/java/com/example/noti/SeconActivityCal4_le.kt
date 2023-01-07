@@ -184,15 +184,18 @@ class SeconActivityCal4_le : AppCompatActivity() {
 
         //Geography (5)
         val n5ctr1 = findViewById<TextInputLayout>(R.id.n5_ctr1)
+        val n5ctr2 = findViewById<TextInputLayout>(R.id.n5_ctr2)
         val n5synt = findViewById<TextInputLayout>(R.id.n5_synt)
 
         val n5c1 = findViewById<TextInputEditText>(R.id.n5c1)
+        val n5c2 = findViewById<TextInputEditText>(R.id.n5c2)
         val n5s = findViewById<TextInputEditText>(R.id.n5s)
 
         val n5res = findViewById<TextView>(R.id.n5_res)
 
-        RealtimeCheck2(n5c1 , n5ctr1 , n5synt , n5c1 , n5s , n5res)
-        RealtimeCheck2(n5s , n5ctr1 , n5synt , n5c1 , n5s , n5res)
+        RealtimeCheck3(n5c1 , n5ctr1 , n5ctr2 , n5synt , n5c1 , n5c2 , n5s , n5res)
+        RealtimeCheck3(n5c2 , n5ctr1 , n5ctr2 , n5synt , n5c1 , n5c2 , n5s , n5res)
+        RealtimeCheck3(n5s , n5ctr1 , n5ctr2 , n5synt , n5c1 , n5c2 , n5s , n5res)
 
         //Islamic Thinking (6)
         val n6ctr1 = findViewById<TextInputLayout>(R.id.n6_ctr1)

@@ -26,6 +26,12 @@ class PrepActivityCal8 : AppCompatActivity() {
             return resi.toString()
         }
 
+        fun MoyenneDe2in (ctr : Float , synt : Float ) : String{
+            val resi = BigDecimal( ( (ctr+synt ) /2).toDouble() ).setScale(2, RoundingMode.HALF_EVEN)
+            return resi.toString()
+        }
+
+
         // MoyenneDe3 : (3) (Standard)
         fun MoyenneDe3 (ctr1 : Float , ctr2 :Float , synt : Float ) : String{
             val resi = BigDecimal( ( (ctr1+ctr2+(synt*2) ) /4).toDouble() ).setScale(2, RoundingMode.HALF_EVEN)
@@ -38,9 +44,10 @@ class PrepActivityCal8 : AppCompatActivity() {
             return resi.toString()
         }
 
-        // MoyenneDe5 : (5) (Ar)
-        fun MoyenneDe5 (orale : Float , ctr :Float , synt : Float , ctrmk :Float , syntmk : Float ) : String{
-            val resi = BigDecimal( ( ( ( (ctr+(synt*2) ) /3) + ( (ctrmk+(syntmk*2) )/3) *2 + orale) /4).toDouble()).setScale(2, RoundingMode.HALF_EVEN)
+        // MoyenneDe4 : (4) (Ar)
+        fun MoyenneDe4ar (orale : Float , ctr :Float , ctrmk :Float , syntmk : Float ) : String{
+            val A = ( ( ctr+ctrmk+(syntmk*2) ) /4)
+            val resi = BigDecimal( ( (orale + (A*3) ) /4).toDouble() ).setScale(2, RoundingMode.HALF_EVEN)
             return resi.toString()
         }
 
@@ -69,20 +76,19 @@ class PrepActivityCal8 : AppCompatActivity() {
                         //EditTexts restrictions
                         if (ng1.text.toString().length > 5 || ng1.text.toString().toFloat() > 20){
                             nf1.error = "_"
-                        }else {
+                        }else{
                             nf1.error = null
                         }
 
                         if (ng2.text.toString().length > 5 || ng2.text.toString().toFloat() > 20){
                             nf2.error = "_"
-                        }
-                        else{
+                        }else if(ng2.text.toString().length <= 5 && ng2.text.toString().toFloat() <= 20){
                             nf2.error = null
                         }
 
                         if (ngx.text.toString().length > 5 || ngx.text.toString().toFloat() > 20){
                             nfx.error = "_"
-                        }else {
+                        }else if(ngx.text.toString().length <= 5 && ngx.text.toString().toFloat() <= 20){
                             nfx.error = null
                         }
 
@@ -98,12 +104,12 @@ class PrepActivityCal8 : AppCompatActivity() {
 
             targetX.addTextChangedListener(object : TextWatcher {
 
-                override fun afterTextChanged(s: Editable) {}
-                override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+                override fun afterTextChanged(s: Editable) {
                     if (ng1.text.toString() == "" || ng2.text.toString() == "" || org.text.toString() == "" || ngx.text.toString() == ""){
                         nxr.text = getString(R.string._00_00)
                     }
                 }
+                override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
                 override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
 
@@ -134,7 +140,7 @@ class PrepActivityCal8 : AppCompatActivity() {
 
                         if (ngx.text.toString().length > 5 || ngx.text.toString().toFloat() > 20){
                             nfx.error = "_"
-                        }else {
+                        }else if(ngx.text.toString().length <= 5 && ngx.text.toString().toFloat() <= 20){
                             nfx.error = null
                         }
 
@@ -173,7 +179,7 @@ class PrepActivityCal8 : AppCompatActivity() {
 
                         if (ngx.text.toString().length > 5 || ngx.text.toString().toFloat() > 20){
                             nfx.error = "_"
-                        }else {
+                        }else if(ngx.text.toString().length <= 5 && ngx.text.toString().toFloat() <= 20){
                             nfx.error = null
                         }
                     }
@@ -182,14 +188,14 @@ class PrepActivityCal8 : AppCompatActivity() {
 
         }
 
-        //For Calculating stuff with stuff (5)
-        fun RealtimeCheck5 (targetX : TextInputEditText, nf1 : TextInputLayout, nf2 : TextInputLayout, nf3 : TextInputLayout, nf4 : TextInputLayout, nf5 : TextInputLayout,
-                            ng1 : TextInputEditText, ng2 : TextInputEditText, ng3 : TextInputEditText, ng4 : TextInputEditText, ng5 : TextInputEditText, nxr : TextView){
+        //For Calculating stuff with stuff (2)
+        fun RealtimeCheck2in (targetX : TextInputEditText, nf : TextInputLayout, nfx : TextInputLayout,
+                              ng : TextInputEditText, ngx : TextInputEditText, nxr : TextView){
 
             targetX.addTextChangedListener(object : TextWatcher {
 
                 override fun afterTextChanged(s: Editable) {
-                    if (ng1.text.toString() == "" || ng2.text.toString() == "" || ng3.text.toString() == "" || ng4.text.toString() == "" || ng5.text.toString() == ""){
+                    if (ng.text.toString() == "" || ngx.text.toString() == ""){
                         nxr.text = getString(R.string._00_00)
                     }
                 }
@@ -197,10 +203,48 @@ class PrepActivityCal8 : AppCompatActivity() {
 
                 override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
 
-                    if (ng1.text.toString() != "" && ng2.text.toString() != "" && ng3.text.toString() != "" && ng4.text.toString() != "" && ng5.text.toString() != ""){
+                    if (ng.text.toString()  != "" && ngx.text.toString() != ""){
 
                         //executing the calculating function(s)
-                        nxr.text = MoyenneDe5( ng1.text.toString().toFloat() , ng2.text.toString().toFloat() , ng3.text.toString().toFloat() , ng4.text.toString().toFloat() , ng5.text.toString().toFloat())
+                        nxr.text = MoyenneDe2in(ng.text.toString().toFloat() , ngx.text.toString().toFloat())
+
+                        //EditTexts restrictions
+                        if (ng.text.toString().length > 5 || ng.text.toString().toFloat() > 20){
+                            nf.error = "_"
+                        }else if(ng.text.toString().length <= 5 && ng.text.toString().toFloat() <= 20){
+                            nf.error = null
+                        }
+
+                        if (ngx.text.toString().length > 5 || ngx.text.toString().toFloat() > 20){
+                            nfx.error = "_"
+                        }else if(ngx.text.toString().length <= 5 && ngx.text.toString().toFloat() <= 20){
+                            nfx.error = null
+                        }
+                    }
+                }
+            })
+
+        }
+
+        //For Calculating stuff with stuff (4)
+        fun RealtimeCheck4ar (targetX : TextInputEditText, nf1 : TextInputLayout, nf2 : TextInputLayout, nf3 : TextInputLayout, nf4 : TextInputLayout,
+                              ng1 : TextInputEditText, ng2 : TextInputEditText, ng3 : TextInputEditText, ng4 : TextInputEditText, nxr : TextView){
+
+            targetX.addTextChangedListener(object : TextWatcher {
+
+                override fun afterTextChanged(s: Editable) {
+                    if (ng1.text.toString() == "" || ng2.text.toString() == "" || ng3.text.toString() == "" || ng4.text.toString() == "" ){
+                        nxr.text = getString(R.string._00_00)
+                    }
+                }
+                override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+
+                override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
+                    if (ng1.text.toString() != "" && ng2.text.toString() != "" && ng3.text.toString() != "" && ng4.text.toString() != ""){
+
+                        //executing the calculating function(s)
+                        nxr.text = MoyenneDe4ar( ng1.text.toString().toFloat() , ng2.text.toString().toFloat() , ng3.text.toString().toFloat() , ng4.text.toString().toFloat())
 
                         //EditTexts restrictions
                         if (ng1.text.toString().length > 5 || ng1.text.toString().toFloat() > 20){
@@ -227,12 +271,6 @@ class PrepActivityCal8 : AppCompatActivity() {
                             nf4.error = null
                         }
 
-                        if (ng5.text.toString().length > 5 || ng5.text.toString().toFloat() > 20){
-                            nf5.error = "_"
-                        }else if(ng5.text.toString().length <= 5 && ng5.text.toString().toFloat() <= 20){
-                            nf5.error = null
-                        }
-
                     }
                 }
             })
@@ -242,23 +280,20 @@ class PrepActivityCal8 : AppCompatActivity() {
         //Arabic
         val n1_orale = findViewById<TextInputLayout>(R.id.n1_orale)
         val n1ctr1 = findViewById<TextInputLayout>(R.id.n1_ctr1)
-        val n1synt = findViewById<TextInputLayout>(R.id.n1_synt)
         val n1ctr1mk = findViewById<TextInputLayout>(R.id.n1_ctr1mk)
         val n1syntmk = findViewById<TextInputLayout>(R.id.n1_syntmk)
 
         val n1orale = findViewById<TextInputEditText>(R.id.n1orale)
         val n1c1 = findViewById<TextInputEditText>(R.id.n1c1)
-        val n1s = findViewById<TextInputEditText>(R.id.n1s)
         val n1c1mk = findViewById<TextInputEditText>(R.id.n1c1mk)
         val n1smk = findViewById<TextInputEditText>(R.id.n1smk)
 
         val n1res = findViewById<TextView>(R.id.n1_res)
 
-        RealtimeCheck5(n1orale , n1_orale , n1ctr1 , n1synt ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1s , n1c1mk , n1smk , n1res)
-        RealtimeCheck5(n1c1 , n1_orale , n1ctr1 , n1synt ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1s , n1c1mk , n1smk , n1res)
-        RealtimeCheck5(n1s , n1_orale , n1ctr1 , n1synt ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1s , n1c1mk , n1smk , n1res)
-        RealtimeCheck5(n1c1mk , n1_orale , n1ctr1 , n1synt ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1s , n1c1mk , n1smk , n1res)
-        RealtimeCheck5(n1smk , n1_orale , n1ctr1 , n1synt ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1s , n1c1mk , n1smk , n1res)
+        RealtimeCheck4ar(n1orale , n1_orale , n1ctr1 ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1c1mk , n1smk , n1res)
+        RealtimeCheck4ar(n1c1 , n1_orale , n1ctr1 ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1c1mk , n1smk , n1res)
+        RealtimeCheck4ar(n1c1mk , n1_orale , n1ctr1 ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1c1mk , n1smk , n1res)
+        RealtimeCheck4ar(n1smk , n1_orale , n1ctr1 ,n1ctr1mk ,n1syntmk ,n1orale , n1c1 , n1c1mk , n1smk , n1res)
 
 
         //French (2)
@@ -421,8 +456,8 @@ class PrepActivityCal8 : AppCompatActivity() {
 
         val n12res = findViewById<TextView>(R.id.n12_res)
 
-        RealtimeCheck2(n12c1 , n12ctr1 , n12synt , n12c1 , n12s , n12res)
-        RealtimeCheck2(n12s , n12ctr1 , n12synt , n12c1 , n12s , n12res)
+        RealtimeCheck2in(n12c1 , n12ctr1 , n12synt , n12c1 , n12s , n12res)
+        RealtimeCheck2in(n12s , n12ctr1 , n12synt , n12c1 , n12s , n12res)
 
         //Sport (13)
         val n13ctr1 = findViewById<TextInputLayout>(R.id.n13_ctr1)
@@ -520,7 +555,7 @@ class PrepActivityCal8 : AppCompatActivity() {
 
         btn.setOnClickListener {
 
-            if (!checkBoxThea.isChecked && !checkBoxSport.isChecked){
+            if (!checkBoxThea.isChecked && !checkBoxSport.isChecked){ //Exempt --> Sport #--False--# || Theatre #--False--#
                 val CalculationResult= ((n1res.text.toString().toFloat() * 4) + (n2res.text.toString().toFloat() * 4)  + (n3res.text.toString().toFloat() *1.5)  + (n4res.text.toString().toFloat() *1)  + (n5res.text.toString().toFloat() *1)  + (n6res.text.toString().toFloat() *1)  + (n7res.text.toString().toFloat() *1)  + (n8res.text.toString().toFloat() *3)  + (n9res.text.toString().toFloat() *1) +  (n10res.text.toString().toFloat() *1) + (n11res.text.toString().toFloat() *1) + (n12res.text.toString().toFloat() *1) + (n13res.text.toString().toFloat() *1) + (n14res.text.toString().toFloat() *1) + (n15res.text.toString().toFloat() *1) + (n16res.text.toString().toFloat() *1)) / 24.5
                 val R_CalculationResult = BigDecimal(CalculationResult.toFloat().toDouble()).setScale(2, RoundingMode.HALF_EVEN)
                 val FinalResult = R_CalculationResult.toString()
@@ -528,7 +563,7 @@ class PrepActivityCal8 : AppCompatActivity() {
                 startActivity(
                     Intent(this@PrepActivityCal8, ResActivity::class.java).putExtra("Moy" ,FinalResult)
                 )
-            }else if (checkBoxThea.isChecked && !checkBoxSport.isChecked){
+            }else if (checkBoxThea.isChecked && !checkBoxSport.isChecked){//Exempt --> Sport #--False--# || Theatre #--True--#
                 val CalculationResult= ((n1res.text.toString().toFloat() * 4) + (n2res.text.toString().toFloat() * 4)  + (n3res.text.toString().toFloat() *1.5)  + (n4res.text.toString().toFloat() *1)  + (n5res.text.toString().toFloat() *1)  + (n6res.text.toString().toFloat() *1)  + (n7res.text.toString().toFloat() *1)  + (n8res.text.toString().toFloat() *3)  + (n9res.text.toString().toFloat() *1) +  (n10res.text.toString().toFloat() *1) + (n11res.text.toString().toFloat() *1) + (n12res.text.toString().toFloat() *1) + (n13res.text.toString().toFloat() *1) + (n14res.text.toString().toFloat() *1) + (n15res.text.toString().toFloat() *1) ) / 23.5
                 val R_CalculationResult = BigDecimal(CalculationResult.toFloat().toDouble()).setScale(2, RoundingMode.HALF_EVEN)
                 val FinalResult = R_CalculationResult.toString()
@@ -536,7 +571,7 @@ class PrepActivityCal8 : AppCompatActivity() {
                 startActivity(
                     Intent(this@PrepActivityCal8, ResActivity::class.java).putExtra("Moy" ,FinalResult)
                 )
-            }else if (!checkBoxThea.isChecked && checkBoxSport.isChecked){
+            }else if (!checkBoxThea.isChecked && checkBoxSport.isChecked){//Exempt --> Sport #--True--# || Theatre #--False--#
                 val CalculationResult= ((n1res.text.toString().toFloat() * 4) + (n2res.text.toString().toFloat() * 4)  + (n3res.text.toString().toFloat() *1.5)  + (n4res.text.toString().toFloat() *1)  + (n5res.text.toString().toFloat() *1)  + (n6res.text.toString().toFloat() *1)  + (n7res.text.toString().toFloat() *1)  + (n8res.text.toString().toFloat() *3)  + (n9res.text.toString().toFloat() *1) +  (n10res.text.toString().toFloat() *1) + (n11res.text.toString().toFloat() *1) + (n12res.text.toString().toFloat() *1) + (n14res.text.toString().toFloat() *1) + (n15res.text.toString().toFloat() *1) + (n16res.text.toString().toFloat() *1) ) / 23.5
                 val R_CalculationResult = BigDecimal(CalculationResult.toFloat().toDouble()).setScale(2, RoundingMode.HALF_EVEN)
                 val FinalResult = R_CalculationResult.toString()
@@ -544,7 +579,7 @@ class PrepActivityCal8 : AppCompatActivity() {
                 startActivity(
                     Intent(this@PrepActivityCal8, ResActivity::class.java).putExtra("Moy" ,FinalResult)
                 )
-            }else{
+            }else{ //Exempt --> Sport #--True--# || Theatre #--True--#
                 val CalculationResult= ((n1res.text.toString().toFloat() * 4) + (n2res.text.toString().toFloat() * 4)  + (n3res.text.toString().toFloat() *1.5)  + (n4res.text.toString().toFloat() *1)  + (n5res.text.toString().toFloat() *1)  + (n6res.text.toString().toFloat() *1)  + (n7res.text.toString().toFloat() *1)  + (n8res.text.toString().toFloat() *3)  + (n9res.text.toString().toFloat() *1) +  (n10res.text.toString().toFloat() *1) + (n11res.text.toString().toFloat() *1) + (n12res.text.toString().toFloat() *1) + (n14res.text.toString().toFloat() *1) + (n15res.text.toString().toFloat() *1)) / 22.5
                 val R_CalculationResult = BigDecimal(CalculationResult.toFloat().toDouble()).setScale(2, RoundingMode.HALF_EVEN)
                 val FinalResult = R_CalculationResult.toString()

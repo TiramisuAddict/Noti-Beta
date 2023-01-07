@@ -103,7 +103,7 @@
                                 android:layout_width="150dp"
                                 android:layout_height="70dp"
                                 android:layout_gravity="center"
-                                android:hint="@string/Controle1"
+                                android:hint="@string/etude_de_texte"
                                 app:boxCornerRadiusTopStart="15dp"
                                 app:boxCornerRadiusBottomEnd="15dp"
                                 app:boxCornerRadiusBottomStart="15dp"
@@ -118,26 +118,6 @@
                                     android:inputType="numberDecimal" />
                             </com.google.android.material.textfield.TextInputLayout>
 
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/n1_synt"
-                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                android:layout_width="150dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:hint="@string/synthese"
-                                app:boxCornerRadiusTopStart="15dp"
-                                app:boxCornerRadiusBottomEnd="15dp"
-                                app:boxCornerRadiusBottomStart="15dp"
-                                app:boxCornerRadiusTopEnd="15dp"
-                                app:errorEnabled="true">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/n1s"
-                                    android:layout_width="match_parent"
-                                    android:fontFamily="@font/fredoka_regular"
-                                    android:layout_height="wrap_content"
-                                    android:inputType="numberDecimal" />
-                            </com.google.android.material.textfield.TextInputLayout>
 
                             <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/n1_ctr1mk"
@@ -166,7 +146,7 @@
                                 android:layout_width="150dp"
                                 android:layout_height="70dp"
                                 android:layout_gravity="center"
-                                android:hint="@string/synthetic_essay"
+                                android:hint="@string/synthese"
                                 app:boxCornerRadiusTopStart="15dp"
                                 app:boxCornerRadiusBottomEnd="15dp"
                                 app:boxCornerRadiusBottomStart="15dp"

@@ -28,6 +28,26 @@
     <!--Menu&Save Button-->
 
     <Button
+        android:id="@+id/adb"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:drawableLeft="@drawable/ic_layer_2"
+        android:fontFamily="@font/tajawal_black"
+        android:paddingStart="30dp"
+        android:text="@string/lad"
+        android:textColor="?colorPrimary"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blaba"
+        app:layout_constraintVertical_bias="0.862"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
         style="?android:attr/buttonBarButtonStyle"
         android:id="@+id/button2"
         android:layout_width="320dp"

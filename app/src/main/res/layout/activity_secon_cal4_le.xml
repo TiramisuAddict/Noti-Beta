@@ -577,6 +577,27 @@
                             </com.google.android.material.textfield.TextInputLayout>
 
                             <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/n5_ctr2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:hint="@string/Controle1"
+                                app:boxCornerRadiusTopStart="15dp"
+                                app:boxCornerRadiusBottomEnd="15dp"
+                                app:boxCornerRadiusBottomStart="15dp"
+                                app:boxCornerRadiusTopEnd="15dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/n5c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fredoka_regular"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/n5_synt"
                                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                 android:layout_width="150dp"
